@@ -49,14 +49,14 @@ def extract_feature(file_name, mfcc, chroma, mel):
     return result
 
 
-Pkl_Filename = "C:\\xampp\\htdocs\\speech_analysis\\public\\Emotion_Voice_Detection_Model.pkl"
+Pkl_Filename = "https://recommendsong.herokuapp.com/public/Emotion_Voice_Detection_Model.pkl"
 
 with open(Pkl_Filename, 'rb') as file:
     Emotion_Voice_Detection_Model = pickle.load(file)
 
 
 ## Appying extract_feature function on random file and then loading model to predict the result
-file = 'C:\\xampp\\htdocs\\speech_analysis\\public\\Audio_input\\img.wav'
+file = 'https://recommendsong.herokuapp.com/public/Audio_input/img.wav'
 # data , sr = librosa.load(file)
 # data = np.array(data)
 ans =[]
