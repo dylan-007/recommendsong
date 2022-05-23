@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+
+}
+
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: none;
+    width: 90%;
+    height: auto 10cm;
+
+    margin: 10px  auto;
+    padding: 7px;
+    font-size: 15px;
+    background-color:rgb(201, 245, 232);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.form-control{
+
+    border: 2px solid black;
+    border-radius: 10px;
+    outline:auto;
+    width: 70%;
+    margin: 40px auto;
+    padding: 7px;
+    font-size: 16px;
+    height: auto 10cm;
+}
+
+  .main{
+
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+  }
+
+  #hr{
+    size: 5px;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+}
+
+h2{
+
+
+    outline: none;
+    width: 100%;
+    height: 1.90cm;
+    margin-top: 0cm;
+    margin:  auto;
+    padding: 25px;
+    font-size: 20px;
+    background-color:rgb(201, 243, 245);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(201, 243, 245);
+    color: rgba(0,0,0,.7);
+    text-align: center;
+    font-size: 20px;
+
+  }
+
+
+
+.kk{
+        Width : 10%;
+        height: 1.90cm;
+        position:absolute;
+        margin-left: 5px;
+        border-radius: 10px;
+        padding: 5px;
+        padding-top: 7px;
+
+    }
+    .cp-text{
+        color: rgba(0,0,0,.7);
+         text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+        font-size: 20px;
+
+        }
+
+        .btn {
+
+            color: white;
+            background: purple;
+            padding: 8px 12px;
+            font-size: 12px;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .footer-tags {
+            float: none;
+            padding-left: 0;
+        }
+
+        .topic{
+            background-color: #ddd174;
+            color: #000!important;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .sentiment{
+            background-color: #8bbbe2;
+            color: #000!important;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .sarcasm{
+            background-color: #e7a4d2;
+            color: #000!important;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .button{
+            display: inline-block;
+            margin: 10px;
+        }

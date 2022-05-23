@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+    background-color: #84CEEB;
+    color: #071A52;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-family:  Georgia;
+  }
+
+  .main{
+
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+  }
+
+  #hr{
+    size: 5px;
+    border: 2px solid aliceblue;
+    color: aliceblue;
+}
