@@ -105,15 +105,15 @@ class MyController extends Controller
         unset($result7["negative"]);
         unset($result7["anticip"]);
         //print_r($result7);
-        foreach ($result7 as $k => $value)
-            $result7[$k]=$value*100;
-        arsort($result7);
+        // foreach ($result7 as $k => $value)
+        //     $result7[$k]=$value*100;
+        // arsort($result7);
 
         // $resultArr = (new SpellandSarcasm)->predict($input);
 
         // $result6 = $resultArr[0];
 
-        // $result7 = $resultArr[1];
+        $result7 = array();
 
         // $result8 = (new Concordance)->getConcordance($input, $result3[1]);
 
