@@ -101,6 +101,8 @@ class MyController extends Controller
         $result7 = exec("test.py  $result6");
         $result7=json_decode($result7,true);
 
+        print($result7);
+
         // unset($result7["positive"]);
         // unset($result7["negative"]);
         // unset($result7["anticip"]);
