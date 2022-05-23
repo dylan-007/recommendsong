@@ -86,7 +86,7 @@
                   <div class="row d_flex">
                      <div class="col-md-6">
                         <div class="text-bg">
-                           <h1>Speech Analysis</h1>
+                           <h1>Recommendation</h1>
                            <p>Speech sentiment analysis is the task of classifying positive/neutral/negative sentiments of a given speech. Compared to emotion recognition, it is a more abstract level of a recognition task.</p>
                            <a href="#">Read More</a>
                         </div>
