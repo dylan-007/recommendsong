@@ -128,6 +128,7 @@ class MyController extends Controller
 
         // return view('speech_output',compact('input', 'result1','result2','result7','positive_sentence'));
         $result7 = [];
+        $result = '';
         return view('sp_output', compact('result7', 'result'));
     }
 
