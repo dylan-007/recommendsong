@@ -70,8 +70,8 @@ emotion = Emotion_Voice_Detection_Model.predict(ans)
 print(emotion)
 
 
-songDF = pd.read_csv("C:\\xampp\\htdocs\\speech_analysis\\public\\data1\\allsong_data.csv")
-complete_feature_set = pd.read_csv("C:\\xampp\\htdocs\\speech_analysis\\public\\data1\\complete_feature.csv")
+songDF = pd.read_csv("https://recommendsong.herokuapp.com/public/data1/allsong_data.csv")
+complete_feature_set = pd.read_csv("https://recommendsong.herokuapp.com/public/data1/complete_feature.csv")
 
 URL = ""
 
@@ -111,7 +111,7 @@ for i in range(number_of_recs):
 
 
 
-f  = open("C:\\xampp\\htdocs\\speech_analysis\\public\\Audio_input\\output.txt", "w+")
+f  = open("https://recommendsong.herokuapp.com/public/Audio_input/output.txt", "w+")
 
 for i in range(0,5):
     x = random.randint(0,number_of_recs-1)
