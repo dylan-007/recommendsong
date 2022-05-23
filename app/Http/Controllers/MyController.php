@@ -98,12 +98,12 @@ class MyController extends Controller
         // $result4= (new Text($input))->predict();
 
         $result6= json_encode($input);
-        $result7 = exec("python emotionanalysis.py  $result6");
+        $result7 = exec("test.py  $result6");
         $result7=json_decode($result7,true);
 
-        unset($result7["positive"]);
-        unset($result7["negative"]);
-        unset($result7["anticip"]);
+        // unset($result7["positive"]);
+        // unset($result7["negative"]);
+        // unset($result7["anticip"]);
         //print_r($result7);
         // foreach ($result7 as $k => $value)
         //     $result7[$k]=$value*100;
@@ -113,7 +113,6 @@ class MyController extends Controller
 
         // $result6 = $resultArr[0];
 
-        $result7 = array();
 
         // $result8 = (new Concordance)->getConcordance($input, $result3[1]);
 
