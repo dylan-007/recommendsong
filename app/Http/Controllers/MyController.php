@@ -101,9 +101,42 @@ class MyController extends Controller
             $result7[$k]=$value*100;
         arsort($result7);
 
+
+        $links = [];
+
+        $i = 0;
+
+        $handle = fopen("Audio_input/output.txt", "r");
+        if ($handle) {
+            while (($line = fgets($handle)) !== false) {
+                // process the line read.
+
+                //string + '~' + string
+
+                $link = explode('~', $line);
+
+                //https://open.spotify.com/track/7zQRF2pG5pty9sck6L6hF4
+
+                //https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator
+
+                $Url = $link[1];
+
+                $trackId = explode('track/', $Url);
+
+                $links[$i] = $trackId[1];
+
+                $i = $i + 1;
+
+            }
+
+            fclose($handle);
+        } else {
+            // error opening the file.
+        }
+
         // return view('speech_output',compact('input', 'result1','result2','result7','positive_sentence'));
         $result = "";
-        return view('sp_output', compact('result7', 'result'));
+        return view('sp_output', compact('result7', 'result','links'));
 
     }
 
