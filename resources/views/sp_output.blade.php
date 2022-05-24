@@ -20,11 +20,6 @@
 
                 <div class='res1'>
                 @if(strlen($result)>0)
-                <h3>{{$result}}</h3>
-                <audio controls>
-                    <source src="Audio_input/img.wav" type="audio/wav">
-                </audio>
-
 
                 <h2>Songs picked based on your emotion :</h2>
                 <div >
