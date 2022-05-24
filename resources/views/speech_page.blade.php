@@ -234,7 +234,7 @@
                             </div>
 
                             <div class="col-sm-12">
-                                <label class="send_btn"><i class="fa fa-upload"></i> Upload </label>
+                                <button><label class="send_btn"><i class="fa fa-upload"></i> Upload </label></button>
                             </div>
 
                         </div>
