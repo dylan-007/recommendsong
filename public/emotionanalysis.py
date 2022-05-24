@@ -25,8 +25,8 @@ json_string = json.dumps(l)
 print(json_string)
 
 
-songDF = pd.read_csv("C:\\xampp\\htdocs\\speech_analysis\\public\\data1\\allsong_data.csv")
-complete_feature_set = pd.read_csv("C:\\xampp\\htdocs\\speech_analysis\\public\\data1\\complete_feature.csv")
+songDF = pd.read_csv("data1/allsong_data.csv")
+complete_feature_set = pd.read_csv("data1/complete_feature.csv")
 
 emotions=list(l)
 emotion = emotions[0]
@@ -71,7 +71,7 @@ for i in range(number_of_recs):
 
 
 
-f  = open("C:\\xampp\\htdocs\\speech_analysis\\public\\Audio_input\\output.txt", "w+")
+f  = open("Audio_input/output.txt", "w+")
 
 for i in range(0,5):
     x = random.randint(0,number_of_recs-1)

@@ -88,11 +88,22 @@ class MyController extends Controller
     {
         $input = $request->input('Message');
 
-        $result7 = exec("speechEmotion.py  $input");
+        $result6= json_encode($input);
+        $result7 = exec("python emotionanalysis.py  $result6");
+        $result7=json_decode($result7,true);
 
-        $result = '';
+        unset($result7["positive"]);
+        unset($result7["negative"]);
+        unset($result7["anticip"]);
+        //print_r($result7);
+        foreach ($result7 as $k => $value)
+            $result7[$k]=$value*100;
+        arsort($result7);
 
+        // return view('speech_output',compact('input', 'result1','result2','result7','positive_sentence'));
+        $result = "";
         return view('sp_output', compact('result7', 'result'));
+
     }
 
     public function UploadPost(Request $request)
