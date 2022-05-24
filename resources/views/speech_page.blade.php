@@ -240,12 +240,6 @@
                         </div>
                     </form>
 
-                    <form class="main-form" action="temp_res">
-                        @csrf
-                        <input type="text" name="tmp_inp">
-                        <button type="submit">submit</button>
-                    </form>
-
                     <br>
                     @if ($message = Session::get('success'))
                     <div class="alert alert-success alert-block">
