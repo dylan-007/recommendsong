@@ -86,71 +86,16 @@ class MyController extends Controller
 
     public function speechOutput(Request $request)
     {
-        $input = $request->input('Message');
+        $result = exec("python test.py");
 
-        // (new Training('topic.csv'))->train();
-        $result1 = (new Prediction($input))->predict();
-
-        $result2 = (new SentimentAnalysis)->scores($input);
-
-        // $result3 = (new WordFrequency)->getFrequency($input);
-
-        // $result4= (new Text($input))->predict();
-
-        $result6= json_encode($input);
-        $result7 = exec("test.py  $result6");
-        $result7=json_decode($result7,true);
-
-        print($result7);
-
-        // unset($result7["positive"]);
-        // unset($result7["negative"]);
-        // unset($result7["anticip"]);
-        //print_r($result7);
-        // foreach ($result7 as $k => $value)
-        //     $result7[$k]=$value*100;
-        // arsort($result7);
-
-        // $resultArr = (new SpellandSarcasm)->predict($input);
-
-        // $result6 = $resultArr[0];
-
-
-        // $result8 = (new Concordance)->getConcordance($input, $result3[1]);
-
-        // $result3 = $result3[0];
-
-        $positive_sentences = array("Get some exercise", "Take a timeout from your work", "Use humor to release tension", "Reach out to your good friends", "Spend time in nature", "Play with an animal", "Reorganize your room", "Make a list of places you want to travel", "Read the story of someone you admire");
-
-        $positive_sentence = $positive_sentences[array_rand($positive_sentences)];
-
-        // printf(key($result7));
-
-        // return view('speech_output',compact('input', 'result1','result2','result7','positive_sentence'));
-        $result7 = [];
-        $result = '';
-        return view('sp_output', compact('result7', 'result'));
+        return view('tmp', compact('result'));
     }
 
     public function UploadPost(Request $request)
     {
-        $request->validate([
-            'image' => 'required|mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav',
-        ]);
+        $result = exec("python test.py");
 
-        $imageName = 'img' . '.' . $request->image->extension();
-
-        $request->image->move(public_path('Audio_input'), $imageName);
-
-
-        /* Store $imageName name in DATABASE from HERE */
-        //$request->image->move(public_path('images'), $imageName);
-        //return view('out', ['data' => $imageName]);
-        $result = exec("python speechEmotion.py");
-        $result = substr($result,2,strlen($result)-4);
-        //return view('out', ['data' => $data]);
-        $result7 = [];
-        return view('sp_output' , compact('result', 'result7'));
+        return view('tmp', compact('result'));
 
     }
 
