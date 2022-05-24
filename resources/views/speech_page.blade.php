@@ -209,7 +209,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <form class="main_form " id="labnol" method="POST" action="SpeechOutput">
-
+                    @csrf
                      <div class="row">
                         <div class="col-md-12">
                            <input class="textarea" placeholder="Input will be appear here" type="text" name="Message" id="transcript">
@@ -227,6 +227,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <form class="main_form" action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="file" name="image" class="form-control">
@@ -240,6 +241,7 @@
                     </form>
 
                     <form class="main-form" action="temp_res">
+                        @csrf
                         <input type="text" name="tmp_inp">
                         <button type="submit">submit</button>
                     </form>
