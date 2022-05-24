@@ -25,7 +25,7 @@
                     <h3>{{$result}}</h3>
 
 
-                    <h2>Songs picked based on your emotion :</h2>
+                    <h2>Songs picked based on your emotion:</h2>
 
                     <div >
 
