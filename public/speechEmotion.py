@@ -30,14 +30,14 @@ def extract_feature(file_name, mfcc, chroma, mel):
     return result
 
 
-Pkl_Filename = "https://recommendsong.herokuapp.com/public/Emotion_Voice_Detection_Model.pkl"
+Pkl_Filename = "https://recommendsong.herokuapp.com/app/public/Emotion_Voice_Detection_Model.pkl"
 
 with open(Pkl_Filename, 'rb') as file:
     Emotion_Voice_Detection_Model = pickle.load(file)
 
 
 ## Appying extract_feature function on random file and then loading model to predict the result
-file = 'https://recommendsong.herokuapp.com/public/Audio_input/img.wav'
+file = 'https://recommendsong.herokuapp.com/app/public/Audio_input/img.wav'
 # data , sr = librosa.load(file)
 # data = np.array(data)
 ans =[]
@@ -51,8 +51,8 @@ emotion = Emotion_Voice_Detection_Model.predict(ans)
 print(emotion)
 
 
-songDF = pd.read_csv("https://recommendsong.herokuapp.com/public/data1/allsong_data.csv")
-complete_feature_set = pd.read_csv("https://recommendsong.herokuapp.com/public/data1/complete_feature.csv")
+songDF = pd.read_csv("https://recommendsong.herokuapp.com/app/public/data1/allsong_data.csv")
+complete_feature_set = pd.read_csv("https://recommendsong.herokuapp.com/app/public/data1/complete_feature.csv")
 
 URL = ""
 
@@ -92,7 +92,7 @@ print(my_songs)
 
 
 
-f  = open("https://recommendsong.herokuapp.com/public/Audio_input/output.txt", "w+")
+f  = open("https://recommendsong.herokuapp.com/app/public/Audio_input/output.txt", "w+")
 
 for i in range(0,5):
     x = random.randint(0,number_of_recs-1)
