@@ -89,6 +89,7 @@ class MyController extends Controller
         $input = $request->input('Message');
 
         $result6= json_encode($input);
+        exec("python -m textblob.download_corpora");
         $result7 = exec("python emotionanalysis.py  $result6");
         $result7=json_decode($result7,true);
 
