@@ -166,4 +166,10 @@ class MyController extends Controller
         return redirect()->away('https://www.youtube.com/results?search_query= '.$emotion.' +songs');
     }
 
+    public function tmpfunc(Request $request){
+        $t = $request->input('tmp_inp')
+
+        return view('tmp', compact('t'));
+    }
+
 }

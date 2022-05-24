@@ -37,3 +37,6 @@ Route::post('/save',[MyController::class,'recVidUpload']);
 Route::get('/recommend',[MyController::class,'recommend']);
 Route::post('/recommend',[MyController::class,'recommend']);
 
+
+Route::get('temp_res',[MyController::class,'tmpfunc']);
+Route::post('temp_res',[MyController::class,'tmpfunc']);

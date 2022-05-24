@@ -6,6 +6,7 @@
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="csrf-token" content="{{ csrf_token() }}">
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -209,6 +210,7 @@
             <div class="row">
                <div class="col-md-12 ">
                   <form class="main_form " id="labnol" method="POST" action="SpeechOutput">
+                      @csrf
                      <div class="row">
                         <div class="col-md-12">
                            <input class="textarea" placeholder="Input will be appear here" type="text" name="Message" id="transcript">
@@ -226,6 +228,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <form class="main_form" action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="row">
 
                             <div class="col-md-6">
@@ -237,6 +240,11 @@
                             </div>
 
                         </div>
+                    </form>
+
+                    <form class="main-form" action="temp_res">
+                        <input type="text" name="tmp_inp">
+                        <button type="submit">submit</button>
                     </form>
 
                     <br>
