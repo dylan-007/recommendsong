@@ -120,12 +120,12 @@ class MyController extends Controller
         /* Store $imageName name in DATABASE from HERE */
         //$request->image->move(public_path('images'), $imageName);
         //return view('out', ['data' => $imageName]);
-        exec("python speechEmotion.py");
+        $result = exec("python speechEmotion.py");
 
-        $result7=array("Volvo","BMW","Toyota");
+        $result7 = [];
 
         //return view('out', ['data' => $data]);
-        $result = "";
+
         return view('sp_output' , compact('result7', 'result'));
 
     }
