@@ -27,3 +27,4 @@ Werkzeug==2.0.2
 librosa==0.9.1
 soundfile==0.10.2
 nrclex==3.0.0
+textblob==0.16.0
