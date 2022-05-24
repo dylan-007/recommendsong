@@ -1,12 +1,8 @@
-import os
-import glob
 import pandas as pd
 import numpy as np
-from scipy.io import wavfile
-from python_speech_features import mfcc , logfbank
 import pickle
-from scipy import signal
 import soundfile
+import librosa
 import random
 from model import *
 from features import *
