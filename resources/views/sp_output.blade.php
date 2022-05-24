@@ -29,15 +29,15 @@
 
                     <div >
 
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[0]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[0]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[1]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[1]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[2]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[2]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[3]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[3]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[4]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[4]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
 
 
@@ -57,15 +57,15 @@
 
                     <div >
 
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[0]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[0]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[1]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[1]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[2]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[2]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[3]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[3]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/.{{$links[4]}}.?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/{{$links[4]}}?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                         <br>
 
 
