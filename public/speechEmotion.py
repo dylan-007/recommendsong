@@ -107,7 +107,7 @@ my_songs = []
 for i in range(number_of_recs):
     my_songs.append([str(edm_top40.iloc[i,1]) + ' - '+ '"'+str(edm_top40.iloc[i,4])+'"', "https://open.spotify.com/track/"+ str(edm_top40.iloc[i,-6]).split("/")[-1]])
 
-# print(my_songs)
+print(my_songs)
 
 
 
