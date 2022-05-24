@@ -54,9 +54,12 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    return [
+        //...
 
-    'asset_url' => env('ASSET_URL'),
+        'url' => env('APP_URL', 'https://recommendsong.herokuapp.com'),
+        'asset_url' => env('ASSET_URL', 'https://recommendsong.herokuapp.com'),
+      ]
 
     /*
     |--------------------------------------------------------------------------
