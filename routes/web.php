@@ -29,8 +29,8 @@ Route::get('result1',[MyController::class,'index']);
 Route::post('SpeechOutput',[MyController::class,'SpeechOutput']);
 Route::get('SpeechOutput',[MyController::class,'SpeechOutput']);
 
-Route::get('image-upload', [ MyController::class, 'Upload' ])->name('image.upload');
-Route::post('image-upload', [ MyController::class, 'UploadPost' ])->name('image.upload.post');
+Route::get('UploadOutput', [ MyController::class, 'Upload' ]);
+Route::post('UploadOutput', [ MyController::class, 'UploadPost' ]);
 
 Route::post('/save',[MyController::class,'recVidUpload']);
 

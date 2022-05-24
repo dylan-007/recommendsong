@@ -226,7 +226,7 @@
             <br>
             <div class="row">
                 <div class="col-md-12">
-                    <form class="main_form" action="{{ route('image.upload.post') }}" method="POST" enctype="multipart/form-data">
+                    <form class="main_form" action="UploadOutput" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
