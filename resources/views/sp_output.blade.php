@@ -2,8 +2,12 @@
 <html>
     <head>
 
-        <!-- CSS only -->
-        <link href="css/sp_out.css" rel="stylesheet" type="text/css" >
+        <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style1.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
 
         <title>Sentiment analysis</title>
     </head>
