@@ -234,7 +234,7 @@
                             </div>
 
                             <div class="col-md-6">
-                                <button class="send_btn" type="submit" class="btn btn-success">Upload</button>
+                                <button class="upload_btn" type="submit" class="btn btn-success">Upload</button>
                             </div>
 
                         </div>
