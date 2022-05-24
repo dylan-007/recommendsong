@@ -16,45 +16,8 @@
                 <h2>Output</h2>
                 <hr id="hr">
 
-
-
-                <div class='res1'>
-                @if(strlen($result)>0)
-
-                <h2>Songs picked based on your emotion :</h2>
-                <div >
-                    <?php
-
-                        $handle = fopen("Audio_input/output.txt", "r");
-                        if ($handle) {
-                            while (($line = fgets($handle)) !== false) {
-                                // process the line read.
-
-                                //string + '~' + string
-
-                                $link = explode('~', $line);
-                                echo "<a href='$link[1]' target='_blank'>$link[0]</a>";
-                                echo "<br>";
-                                echo "<br>";
-                            }
-
-                            fclose($handle);
-                        } else {
-                            // error opening the file.
-                        }
-
-                    ?>
-                </div>
-                @endif
-                </div>
-
-
-
                 <div class="res2">
                 @if(count($result7)>0)
-                @foreach ($result7 as $k => $value)
-                    <div class="grid-item">{{$k}}=>{{$value}}%</div>
-                @endforeach
 
                 <h2>Songs picked based on your emotion :</h2>
                 <div >
