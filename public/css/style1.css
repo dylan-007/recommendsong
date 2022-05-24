@@ -715,11 +715,11 @@ button {
     font-size: 17px;
     background-color: #000;
     color: #fff;
-    padding: 10px 0px;
+    padding: 13px 0px;
+    padding-left: 13px;
     width: 100%;
-    max-width: 100px;
-    text-align: center;
-    display: inline-block;
+    max-width: 90px;
+    display: block;
     transition: ease-in all 0.5s;
     border-radius: 10px;
 }
