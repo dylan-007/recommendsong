@@ -647,7 +647,7 @@ button {
      border-left: 0;
 }
 
-.contact .main_form .send_btn {
+.send_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
      background-color: #000;
@@ -662,7 +662,7 @@ button {
      border-radius: 10px;
 }
 
-.contact .main_form .send_btn:hover {
+.send_btn:hover {
      background-color: #008df3;
      transition: ease-in all 0.5s;
      color: #fff;

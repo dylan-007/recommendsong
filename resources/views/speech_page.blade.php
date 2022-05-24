@@ -229,12 +229,12 @@
                     <form class="main_form" action="UploadOutput" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <input type="file" name="image" class="form-control">
                             </div>
 
-                            <div class="col-md-6">
-                                <button class="upload_btn" type="submit" class="btn btn-success">Upload</button>
+                            <div class="col-sm-12">
+                                <label class="send_btn"><i class="fa fa-upload"></i> Upload </label>
                             </div>
 
                         </div>
