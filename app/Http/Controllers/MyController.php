@@ -167,7 +167,7 @@ class MyController extends Controller
     }
 
     public function tmpfunc(Request $request){
-        $t = $request->input('tmp_inp')
+        $t = $request->input('tmp_inp');
 
         return view('tmp', compact('t'));
     }
