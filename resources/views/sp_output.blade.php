@@ -29,6 +29,7 @@
 
 
                     <h2>Songs picked based on your emotion :</h2>
+
                     <div >
                         <?php
 
@@ -40,6 +41,23 @@
                                     //string + '~' + string
 
                                     $link = explode('~', $line);
+
+
+                                    //https://open.spotify.com/track/7zQRF2pG5pty9sck6L6hF4
+
+                                    //https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator
+
+                                    $Url = $link[1];
+
+                                    $trackId = explode('track/', $Url);
+
+                                    $track = $trackId[1];
+
+
+                                    $str = '<iframe style="border-radius:12px" src= "https://open.spotify.com/embed/playlist/' .  $track . '?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"> </iframe>';
+
+
+                                    echo $str;
                                     echo "<a href='$link[1]' target='_blank'>$link[0]</a>";
                                     echo "<br>";
                                     echo "<br>";
@@ -52,7 +70,7 @@
                             }
 
                         ?>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
                     </div>
                     @endif
                     </div>
@@ -66,6 +84,7 @@
                     @endforeach
 
                     <h2>Songs picked based on your emotion :</h2>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     <div >
                         <?php
 
@@ -88,7 +107,6 @@
                             }
                         ?>
 
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1s9knjP51Oa?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
 
                     @endif
