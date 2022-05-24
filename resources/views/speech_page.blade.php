@@ -228,7 +228,7 @@
                                 <input type="file" name="image" class="form-control">
                             </div>
 
-                            <div class="col-sm-12">
+                            <div class="col-sm-12" class="wrap">
                                 <button class="upload_btn" type="submit" class="btn btn-success"><i class="fa fa-upload"></i>Upload</button>
                             </div>
 
