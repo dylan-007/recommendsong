@@ -117,15 +117,16 @@ class MyController extends Controller
 
         $request->image->move(public_path('Audio_input'), $imageName);
 
-
         /* Store $imageName name in DATABASE from HERE */
         //$request->image->move(public_path('images'), $imageName);
         //return view('out', ['data' => $imageName]);
-        $result7 = exec("python speechEmotion.py");
-        $result7 = substr($result,2,strlen($result)-4);
+        exec("python speechEmotion.py");
+
+        $result7=array("Volvo","BMW","Toyota");
+
         //return view('out', ['data' => $data]);
         $result = "";
-        return view('sp_output' , compact('result', 'result7'));
+        return view('sp_output' , compact('result7', 'result'));
 
     }
 
