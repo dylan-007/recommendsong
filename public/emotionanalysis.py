@@ -8,8 +8,8 @@ from model import *
 from features import *
 # Assign emotion
 
-text = sys.argv[1]
-# text = "I am not happy"
+#text = sys.argv[1]
+text = "I am not happy"
 
 # Create object
 emotion = NRCLex(text)
