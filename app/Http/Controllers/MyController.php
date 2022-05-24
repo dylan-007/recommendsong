@@ -84,7 +84,7 @@ class MyController extends Controller
     }
 
 
-    public function speechOutput(Request $request)
+    public function SpeechOutput(Request $request)
     {
         $result = exec("python test.py");
 
