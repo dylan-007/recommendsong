@@ -3,7 +3,7 @@
     <head>
 
         <!-- CSS only -->
-        <link href="{{ URL::asset('css/sp_out.css') }}" rel="stylesheet" type="text/css" >
+        <link href="css/sp_out.css" rel="stylesheet" type="text/css" >
 
         <title>Sentiment analysis</title>
     </head>
