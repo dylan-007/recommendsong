@@ -224,12 +224,13 @@
                     <form class="main_form" action="UploadOutput" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="row">
-                            <div class="col-md-12">
+
+                            <div class="col-sm-6 col-md-6 col-lg-6 " style="margin-bottom: 25px">
                                 <input type="file" name="image" class="form-control">
                             </div>
 
-                            <div class="col-sm-12" class="wrap">
-                                <button class="upload_btn" type="submit" class="btn btn-success"><i class="fa fa-upload"></i>Upload</button>
+                            <div class="col-sm-6 col-md-6 col-lg-6 ">
+                                <button class="upload_btn" type="submit" >Upload</button>
                             </div>
 
                         </div>

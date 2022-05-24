@@ -711,21 +711,20 @@ button {
      transition: ease-in all 0.5s;
 }
 
-.wrap {
-    text-align: center;
-}
+
 
 .upload_btn {
     font-size: 17px;
     background-color: #000;
     color: #fff;
     padding: 13px 13px;
-    width: 100%;
+    width: 200px;
     max-width: 90px;
     display: block;
     transition: ease-in all 0.5s;
     border-radius: 10px;
-    position: absolute;
+    margin: 0 auto;
+
     top: 50%;
 }
 
