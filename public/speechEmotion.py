@@ -1,24 +1,12 @@
 import os
 import glob
-from tqdm import tqdm
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 from scipy.io import wavfile
 from python_speech_features import mfcc , logfbank
-import os, glob, pickle
+import pickle
 from scipy import signal
-import noisereduce as nr
-from glob import glob
 import soundfile
-from tensorflow.keras.layers import Conv2D,MaxPool2D, Flatten, LSTM
-from keras.layers import Dropout,Dense,TimeDistributed
-from keras.models import Sequential
-# from keras.utils import to_categorical
-from sklearn.utils.class_weight import compute_class_weight
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import accuracy_score
 import random
 from model import *
 from features import *
