@@ -26,3 +26,4 @@ urllib3==1.26.7
 Werkzeug==2.0.2
 librosa==0.9.1
 soundfile==0.10.2
+nrclex==3.0.0
