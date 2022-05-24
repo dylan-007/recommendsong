@@ -86,16 +86,34 @@ class MyController extends Controller
 
     public function SpeechOutput(Request $request)
     {
-        $result = exec("python test.py");
+        $input = $request->input('Message');
 
-        return view('tmp', compact('result'));
+        $result7 = exec("speechEmotion.py  $input");
+
+        $result = '';
+
+        return view('sp_output', compact('result7', 'result'));
     }
 
     public function UploadPost(Request $request)
     {
-        $result = exec("python test.py");
+        $request->validate([
+            'image' => 'required|mimes:application/octet-stream,audio/mpeg,mpga,mp3,wav',
+        ]);
 
-        return view('tmp', compact('result'));
+        $imageName = 'img' . '.' . $request->image->extension();
+
+        $request->image->move(public_path('Audio_input'), $imageName);
+
+
+        /* Store $imageName name in DATABASE from HERE */
+        //$request->image->move(public_path('images'), $imageName);
+        //return view('out', ['data' => $imageName]);
+        $result = exec("python speechEmotion.py");
+        $result = substr($result,2,strlen($result)-4);
+        //return view('out', ['data' => $data]);
+        $result7 = [];
+        return view('sp_output' , compact('result', 'result7'));
 
     }
 
