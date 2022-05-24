@@ -169,7 +169,9 @@ class MyController extends Controller
     public function tmpfunc(Request $request){
         $t = $request->input('tmp_inp');
 
-        return view('tmp', compact('t'));
+        $result = exec("python test.py");
+
+        return view('tmp', compact('result'));
     }
 
 }
