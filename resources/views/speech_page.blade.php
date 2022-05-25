@@ -230,7 +230,7 @@
                             </div>
 
                             <div class="col-sm-6 col-md-6 col-lg-6 ">
-                                <button class="upload_btn" type="submit" ><i class="fa fa-upload"> </i></button>
+                                <button class="upload_btn" type="submit" ><i class="fa fa-upload" style="font-size:24px"></i></button>
                             </div>
 
                         </div>
